@@ -1,17 +1,17 @@
 # URL-Shortner
 A simple web application to shorten long URLs and track the number of clicks.
 
-Features:
+Features:<br>
 Generate short URLs from long links<br>
-Track number of clicks per short URL
-Responsive Bootstrap UI
-MongoDB for data storage
-Deployed on Render
+Track number of clicks per short URL<br>
+Responsive Bootstrap UI<br>
+MongoDB for data storage<br>
+Deployed on Render<br>
 
-Tech Stack:
-Backend: Node.js, Express
-Database: MongoDB (Mongoose)
-Frontend: EJS, Bootstrap
+Tech Stack:<br>
+Backend: Node.js, Express<br>
+Database: MongoDB (Mongoose)<br>
+Frontend: EJS, Bootstrap<br>
 
 Installation:
 ```
@@ -21,6 +21,6 @@ npm install
 npm start
 ```
 Make sure MongoDB is running locally or replace with your Atlas connection string.
-
-Live Demo
+<br>
+Live Demo<br>
 [Visit Site](https://url-shortner-ie9v.onrender.com/)
