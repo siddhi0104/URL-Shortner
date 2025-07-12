@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous"
+  />
+  <title>URL Shrinker</title>
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="mb-4">URL Shrinker</h1>
+    
+    <form action="/shortUrls" method="POST" class="d-flex gap-2 mb-4">
+  <input type="url" placeholder="Enter a long URL" name="fullURL" id="fullURL" class="form-control"/>
+  <button class="btn btn-success" type="submit">Shrink</button>
+</form>
+
+
+    <table class="table table-bordered table-striped table-responsive">
+      <thead class="table-dark">
+        <tr>
+          <th>Full URL</th>
+          <th>Short URL</th>
+          <th>Clicks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% shortUrls.forEach(shortUrl => { %>
+            <tr>
+                <td><a href="<%= shortUrl.full %>" target="_blank"><%= shortUrl.full %></a></td>
+                <td><a href="<%= shortUrl.short %>"><%= shortUrl.short %></a></td>
+                <td><%= shortUrl.clicks %></td>
+            </tr>
+        <%}) %>
+        
+        
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
