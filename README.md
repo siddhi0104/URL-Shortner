@@ -2,7 +2,7 @@
 A simple web application to shorten long URLs and track the number of clicks.
 
 Features:
-Generate short URLs from long links
+Generate short URLs from long links<br>
 Track number of clicks per short URL
 Responsive Bootstrap UI
 MongoDB for data storage
