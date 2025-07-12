@@ -20,7 +20,7 @@ cd URL-Shortner
 npm install
 npm start
 ```
-Make sure MongoDB is running locally or replace with your Atlas connection string.
+Make sure MongoDB is running locally or replace with your Atlas connection string.<br>
 <br>
 Live Demo<br>
 [Visit Site](https://url-shortner-ie9v.onrender.com/)
